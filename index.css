@@ -1,0 +1,28 @@
+.square__black,.square__red,.square__green{
+  width:100px;
+  display : block;
+  position: absolute;
+  left:50%;
+  top:50%;
+  height:100px;
+  background: black;
+  transform: translate(-50%,-50%);
+}
+
+.square__red{
+  background: red;
+  transform : translate(0%,0%);
+}
+
+.square__green{
+  background: green;
+  transform : translate(-100%,-100%)
+}
+.square__green:hover,.square__red:hover,.square__black:hover{
+  transform: scale(2.0);
+  transition: 1s ease;
+  transform-origin: 100% 100%;
+}
+.square__black:hover,.square__red:hover{
+  z-index: 1;
+}
